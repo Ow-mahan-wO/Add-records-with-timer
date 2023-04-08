@@ -5,9 +5,10 @@ This mini-man project helps you to record and manage your daily tasks and this p
 Languages ​​used in this mini-project:
 
 - html
-
 - css
+- Javascript
 
--Java Script
 
 GitHub page link:
+
+https://ow-mahan-wo.github.io/Add-records-with-timer/
