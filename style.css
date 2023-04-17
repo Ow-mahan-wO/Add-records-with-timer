@@ -1,0 +1,110 @@
+
+
+*{
+    font-family: digital;
+}
+@font-face {
+    font-family:digital;
+    src: url(font/digital-7.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+}
+.timer__button{
+    margin: 0.5rem;
+    width: 15rem;
+    height:4rem;
+    font-size: 2rem;
+    background-color: white;
+    background: #eeeeee;
+    box-shadow:  6px -6px 8px #9d9d9d,
+    -6px 6px 8px #ffffff;
+    border: none;         
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.timer__item{
+    font-size: 6rem;
+}
+.timer__button:hover{
+    color: green;
+}
+.container{
+    margin-top: 1rem;
+    width:68rem;
+    background: #eeeeee;
+    box-shadow:  6px -6px 8px #9d9d9d,
+    -6px 6px 8px #ffffff;
+    border-radius: 1rem;
+}
+.container-todo{
+    margin-top:3rem;
+    width:68rem;
+}
+.records-container{
+    overflow: scroll;
+    height: 27rem;
+}
+.record{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eeeeee;
+    box-shadow:  6px -6px 8px #9d9d9d,
+    -6px 6px 8px #ffffff;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.record__name{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.record__delete{
+    cursor: pointer;
+    margin: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+    background-color: #b45a5a;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    
+}
+@media only screen and (max-width:1210px) {
+    .container-todo{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:766px) {
+    .buttons-container{
+       flex-wrap: wrap;
+    }
+    .container{
+        height: 31rem;
+    }
+}
+@media only screen and (max-width:554px) {
+    .timer__button{
+        width: 92%;
+    }
+    .container{
+        height: 41rem;
+    }
+}
